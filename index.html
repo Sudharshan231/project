@@ -11,8 +11,40 @@
 <style>
   a:hover{
     font-size: 18px;
-  
   }
+  .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.item {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+/* Base styles */
+body {
+  font-size: 16px;
+}
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
+
 </style>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
